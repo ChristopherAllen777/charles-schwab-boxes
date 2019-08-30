@@ -1,0 +1,36 @@
+html {
+    background-color: #f3f3f3;
+    max-width: 980px;
+    margin: auto;
+}
+
+.container-fluid {
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    color: white;
+    max-width: 230px;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card.red {
+    background-color: #e65765;
+}
+
+.card.green {
+    background-color: green;
+}
+
+.card.blue {
+    background-color: blue;
+}
+
+.card.white {
+    background-color: white;
+    color: black;
+}

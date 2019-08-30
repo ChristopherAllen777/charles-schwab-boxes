@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>JS Event Delegation - Charles Schwab</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">Charles Schwab</h1>
+                    <p class="lead">Front End Developer Coding Assessment</p>
+                    <small>Christopher Allen - 8/29/2019</small>
+                    <p id="demo"></p>
+                </div>
+        </div>
+        <div class="row">
+                <div class="card-deck text-center">
+                        <div class="card red change">
+                            <div class="card-body">
+                            <h5 class="card-title">Red Box</h5>
+                            <p class="card-text">Changes the backgrounds of Green Box & Blue Box to the color Red</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" id="red" onclick="dothis(this.id)" class="btn btn-danger">Turn Red</a>
+                            </div>
+                        </div>
+                        <div class="card green change">
+                            <div class="card-body">
+                            <h5 class="card-title">Green Box</h5>
+                            <p class="card-text">Changes the backgrounds of Red Box & Blue Box to the color Green</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" id="green" onclick="dothis(this.id)" class="btn btn-success">Turn Green</a>
+                            </div>
+                        </div>
+                        <div class="card blue change">
+                                <div class="card-body">
+                                <h5 class="card-title">Blue Box</h5>
+                                <p class="card-text">Changes the backgrounds of Green Box & Blue Box to the color Blue</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" id="blue" onclick="dothis(this.id)" class="btn btn-primary">Turn Blue</a>
+                                </div>
+                            </div>
+                        <div class="card white">
+                            <div class="card-body">
+                            <h5 class="card-title">White Box</h5>
+                            <p class="card-text">Changes all Boxes to default colors</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" id="default" onclick="dothis(this.id)" class="btn btn-default">Turn Default</a>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
